@@ -1,0 +1,44 @@
+{
+  "name": "@pugilism/william-hill-boxing",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node ./src/test.ts",
+    "test:e2e": "jest --config jest.config.e2e.json",
+    "tslint": "tslint -c tslint.json 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.12",
+    "@types/node": "^12.0.0",
+    "@types/request": "^2.48.1",
+    "@types/request-promise": "^4.1.43",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  },
+  "description": "Returns upcoming boxing matches, the start time and odds",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boxing/william-hill-boxing.git"
+  },
+  "keywords": [
+    "williamhill",
+    "boxing"
+  ],
+  "author": "Mike DiDomizio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boxing/william-hill-boxing/issues"
+  },
+  "homepage": "https://github.com/boxing/william-hill-boxing#readme"
+}
